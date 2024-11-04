@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>FOF</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="cake.html">Cake</a></li>
+                <li><a href="cat.html">Cat</a></li>
+                <li><a href="orange.html">Orange</a></li>
+                <li><a href="untitled.html">Untitled</a></li>
+                <li><a href="s-shots.html">S-Shots</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside>
+            <h2>Huzz</h2>
+            <p>Thread cautiously, but not too cautious.</p>
+            <nav class="huzz">
+                <ul>
+                    <li><a href="ammi.html">Ammi</a></li>
+                    <li><a href="amira.html">Amira</a></li>
+                    <li><a href="ilham.html">Ilham</a></li>
+                    <li><a href="asian">Asian</a></li>
+                    <li><a href="farida.html">Farida</a></li>
+                    <li><a href="humaira.html">Humaira</a></li>
+                    <li><a href="ihsan.html">Ihsan</a></li>
+                    <li><a href="izzy.html">Izzy</a></li>
+                    <li><a href="leema.html">Leema</a></li>
+                    <li><a href="maryam.html">Maryam</a></li>
+                    <li><a href="maya.html">Maya</a></li>
+                    <li><a href="merish.html">Merish</a></li>
+                    <li><a href="samina.html">Samina</a></li>
+                    <li><a href="14.html">14</a></li>
+                    <li><a href="teema.html">Teema</a></li>
+                    <li><a href="zakiya.html">Zakiya</a></li>
+            </nav>
+        </aside>
+        <section>
+            <div>
+                <h1>Welcome to FOF</h1>
+                <p>We are a family owned and operated cake shop located in the heart of downtown Toronto. We offer a wide range of cakes, sweets, and desserts to satisfy your taste buds. Our cakes are made with love and care, and we are dedicated to providing the best quality products to our customers.</p>
+                <p>We are always happy to welcome new customers and provide them with the best cake experience. If you have any questions or concerns, please don't hesitate to contact us.</p>
+            </div>
+            <div>
+                <h2>Our Services</h2>
+                <p>You can choose from our wide range of nice stuffs, but you do not know what you might find.</p>
+                <p>What you see is not what you get.</p>
+            </div>
+            <div class="cards">
+                <div class="slideshow-container" id="slideshow1">
+                    <div class="mySlides fade">
+                        <img src="images/cake (1).jpg" alt="Image 1-1">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/cake (2).jpg" alt="Image 1-2">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/cake (3).jpg" alt="Image 1-3">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/cake (4).jpg" alt="Image 3-3">
+                        <div class="overlay"></div>
+                    </div>
+                    <a href="cake.html"><button>click me</button></a>
+                </div>
+                
+                <div class="slideshow-container" id="slideshow2">
+                    <div class="mySlides fade">
+                        <img src="images/cat (1).jpg" alt="Image 2-1">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/cat (2).jpg" alt="Image 2-2">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/cat (2).jpg" alt="Image 2-3">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/cat (2).jpg" alt="Image 3-3">
+                        <div class="overlay"></div>
+                    </div>
+                    <a href="cat.html"><button>click me</button></a>
+                </div>
+                
+                <div class="slideshow-container" id="slideshow3">
+                    <div class="mySlides fade">
+                        <img src="images/orange (1).jpg" alt="Image 3-1">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/orange (2).jpg" alt="Image 3-2">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="overlay"></div>
+                        <img src="images/orange (3).jpg" alt="Image 3-3">
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="overlay"></div>
+                        <img src="images/orange (4).jpg" alt="Image 3-3">
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="overlay"></div>
+                        <img src="images/orange (5).jpg" alt="Image 3-3">   
+                    </div>
+                    <a href="orange.html"><button>click me</button></a>
+                </div>
+            </div>
+            <script>
+                function showSlides(slideshowId, interval) {
+                    let slideIndex = 0;
+                    const slides = document.querySelectorAll(`#${slideshowId} .mySlides`);
+            
+                    function displaySlides() {
+                        for (let i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        slideIndex++;
+                        if (slideIndex > slides.length) { slideIndex = 1; }
+                        slides[slideIndex - 1].style.display = "block";
+                        setTimeout(displaySlides, interval);
+                    }
+            
+                    displaySlides();
+                }
+            
+                // Initialize each slideshow with different IDs and intervals
+                showSlides('slideshow1', 1500); // Slideshow 1: changes every 3 seconds
+                showSlides('slideshow2', 1500); // Slideshow 2: changes every 3 seconds
+                showSlides('slideshow3', 1500); // Slideshow 3: changes every 3 seconds
+            </script>
+            
+        </section>
+    </main>
+</body>
+</html>

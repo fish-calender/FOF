@@ -1,0 +1,43 @@
+.master{
+    width: 80%;
+    padding: 8px;
+}
+.selecting{
+    display: flex;
+    flex-direction: column;
+}
+
+.select{
+    display: flex;
+    flex-direction: row;
+    width: 482px;
+    height: 582px;
+}
+.selections{
+    border: 5px solid lime;
+    border-radius: 10px;
+    margin: 8px;
+    position: relative;
+    display: inline-block; /* Adjusts to the image size */
+}
+
+.sel{
+    display: block;
+    width: 500px; /* Adjust as needed */
+    height: 555px; /* Adjust as needed */
+}
+
+.overlays {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 555.5px;
+    background-color: limegreen; /* Semi-transparent black */
+    z-index: 1;
+    transition: opacity 0.5s ease;
+  }
+
+  .overlays:hover {
+    opacity: 0.1;
+  }
